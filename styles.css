@@ -1,0 +1,99 @@
+/* Temel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("fon.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar-text {
+    position: absolute;
+    top: 270px;
+    left: 12%;
+    transform: translateX(-50%);
+    font-size: 44px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 80px;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.header-buttons a {
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px;
+    margin-top: 60px;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+}
+
+section {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+img:hover {
+    transform: scale(2.2);
+    transition: transform 0.3s ease;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+.descriptions {
+    position: absolute;
+    top: 50%; /* Resmin ortasına gelecek şekilde ayarlayabilirsiniz */
+    left: 100%; /* Resmin sağında olacak şekilde ayarlayabilirsiniz */
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000; /* Yazı rengi */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s ease; /* Opaklık geçiş efekti */
+}
+
+.additional-photo:hover + .descriptions {
+    opacity: 1; /* Resmin üzerine gelindiğinde yazıları görünür hale getirir */
+}

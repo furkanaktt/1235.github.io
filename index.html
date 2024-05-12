@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Aktepe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes blinking {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .avatar-text {
+            position: absolute;
+            top: 270px;
+            left: 15%;
+            transform: translateX(-50%);
+            font-size: 44px;
+            color: black;
+            text-align: center;
+            width: 100%;
+            animation: blinking 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative;">
+        <img class="avatar" src="esk.jpg" alt="Furkan Aktepe">
+        <p class="avatar-text">FURKAN AKTEPE </p>
+    </div>
+    <header class="header-buttons">
+        <a href="#" onclick="toggleSection('personal-info')">Hakkımda</a>
+        <a href="#" onclick="toggleSection('interests')">İlgi Alanları</a>
+        <a href="#" onclick="toggleSection('images')">Görseller</a>
+        <a href="#" onclick="toggleSection('links')">Bağlantılar</a>
+    </header>
+    <main>
+        <section id="personal-info">
+            <div class="info">
+                <p><strong>İsim:</strong> Furkan Aktepe</p>
+                <p><strong>Yaş:</strong> 23</p>
+                <p><strong>Şehir:</strong> Ankara</p>
+                <p><strong>Okul:</strong> <a href="https://ankaramedipol.edu.tr/">Ankara Medipol Üniversitesi</a></p>
+                <p><strong>Bölüm:</strong> Yönetim Bilişim Sistemleri Programı</p>
+                <p><strong>Not Ortalaması:</strong> 3.2</p>
+                <p><strong>Burç:</strong> İkizler</p>
+            </div>
+        </section>
+        <section id="interests">
+            <h2>İlgi Alanları</h2>
+            <ul class="hobbies-list">
+                <li><span class="bullet"></span>Sportif Motorsiklet Biniciliği</li>
+                <li><span class="bullet"></span>Sportif Balıkçılık</li>
+                <li><span class="bullet"></span>ANKARAGÜCÜ SPOR</li>
+            </ul>
+        </section>
+        <section id="images">
+            <h2>Görseller</h2>
+            <div class="gallery-item">
+                <img src="1.jpg" alt="Balık Resmi">
+                <p class="image-description">Sivrihisar</p>
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpg" alt="Cross Resmi">
+                <p class="image-description">Kapadokya</p>
+            </div>
+            <div class="gallery-item">
+                <img src="3.jpg" alt="Drag Resmi">
+                <p class="image-description">Porsuk Çayı</p>
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpg" alt="Kamp Resmi">
+                <p class="image-description">Göksu Parkı</p>
+            </div>
+        </section>
+        <section id="links">
+            <h2>Bağlantılar</h2>
+            <p><a href="https://wa.me/905467931322"><img class="social-icon" src="watsap.jpg" alt="WhatsApp"></a>WhatsApp: 05467931322</p>
+            <p><a href="https://www.instagram.com/furkan.aktepee"><img class="social-icon" src="instagram.jpg" alt="Instagram"></a>Instagram: furkan.aktepee</p>
+            <p><a href="https://www.linkedin.com/in/furkan-aktepe-64638227a/"><img class="social-icon" src="linkedin.jpg" alt="LinkedIn"></a>LinkedIn: furkan-aktepe-64638227a</p>
+            <p><a href="mailto:furkan.aktepe.06.fa@gmail.com"><img class="social-icon" src="eposta.jpg" alt="E-posta"></a>E-posta: furkan.aktepe.06.fa@gmail.com</p>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
